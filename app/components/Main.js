@@ -31,11 +31,8 @@ var Main = React.createClass({
      return (
        <div className="container">
          <div className="row">
-           <div className="jumbotron">
-             <h2 className="text-center">New York Times Article Scrubber</h2>
-             <p className="text-center">
-               <em>Search for and save articles that interest you</em>
-             </p>
+           <div class="page-header">
+             <h1>New York Times Article Scrubber<small><em>Search for and save articles that interest you</em></small></h1>
            </div>
            <div className="row">
            	<Form setTerm={this.setTerm} />

@@ -38,13 +38,13 @@ var helper = {
   },
 
   // This function hits our own server to retrieve the record of query results
-  getHistory: function() {
-    return axios.get("/api");
+  getArticles: function() {
+    return axios.get("/api/saved");
   },
 
   // This function posts new searches to our database.
-  postHistory: function(location) {
-    return axios.post("/api", { location: location });
+  postArticles: function(location) {
+    return axios.post("/api/saved", { title: headlines, url: link, saved: true });
   }
 };
 
